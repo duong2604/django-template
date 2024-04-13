@@ -1,0 +1,21 @@
+{% extends "./layout.html" %}
+
+
+
+{% block content %}
+<section>
+    {% include "./shared/banner.html" %}
+    <section>
+        <section class="container">
+            <section class='row'>
+                {% for item in products %}
+                <section class='col-3'>
+                    {% include "./shared/product.html" %}
+                </section>
+                {% endfor %}
+            </section>
+
+        </section>
+
+
+        {% endblock content %}
